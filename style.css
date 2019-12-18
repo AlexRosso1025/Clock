@@ -3,8 +3,7 @@ body{
 }
 
 .clock{
-
-    margin-top: 0;
+    margin-top: 45px;
     background-image: url(assets/ios_clock.svg);
     background-repeat: no-repeat;
     width: 500px;
@@ -33,7 +32,7 @@ body{
     z-index: 0;
     transform-origin: bottom;
     animation: girar 60s infinite steps(60);
-    z-index: 2;
+    z-index: 1;
 }
 
 .minute{
@@ -45,7 +44,7 @@ body{
     left: 48.5%;
     transform-origin: bottom;
     animation: girar 3600s infinite steps(60);
-    z-index: 3;
+    z-index: 2;
 }
 
 .hour{
@@ -57,11 +56,11 @@ body{
     left: 48.3%;
     transform-origin: bottom;
     animation: girar 43200 infinite steps(12);
-    z-index: 67;
+    z-index: 3;
 }
 
 @keyframes girar {
     100% {
       transform: rotateZ(360deg);
-    }
-  }
+}
+}
