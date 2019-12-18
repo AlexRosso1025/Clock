@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+}
+
+.clock{
+
+    margin-top: 0;
+    background-image: url(assets/ios_clock.svg);
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+    transform: translate(80%);
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    border: 1px;
+    background-color: black;
+    border-radius: 50px;
+    transform: translate(238px,240px);
+    position: relative;
+    z-index: 5;
+}
+
+.second{
+    background-color: red;
+    position: relative;
+    width: 0.1%;
+    height: 38%;
+    top: 46%;
+    left: 49%;
+    z-index: 0;
+    transform-origin: 0 0;
+    animation: girar 60s infinite steps(60);
+    z-index: 2;
+}
+
+.minute{
+    background-color: black;
+    position: relative;
+    width: 1%;
+    height: 36%;
+    top: 7%;
+    left: 48.5%;
+    transform-origin: 0 0;
+    animation: girar 3600s infinite steps(60);
+    z-index: 3;
+}
+
+.hour{
+    background-color: black;
+    position: relative;
+    width: 1.5%;
+    height: 15%;
+    bottom: 28%;
+    left: 48.3%;
+    animation: girar 43200 infinite steps(12);
+    z-index: 4;
+}
+
+@keyframes girar {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }

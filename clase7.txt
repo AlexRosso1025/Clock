@@ -1,0 +1,69 @@
+z-index: en contenedores diferentes no sé comporta de la misma manera
+comienza en 0 (el más atrás en 0)
+
+Apuntar a elementos según estado
+
+Pseudo-clases
+Pseudo-selectores
+
+*Por Acciones de Usuario:
+    Click, scroll.
+*Posicionamiento en el documento:
+    Primer hijo, segundo hijo.
+
+Pseudoelementos: 
+content para modificar elementos.
+Así puedo ver cambios.
+
+before, after
+
+Alterar renderización de un elemento de HTML: 
+transform -> Modificar el espacio de coordenadas CSS
+
+Para animar el elemento: transform - @keyframe
+
+secuencia de colores: Gradient
+
+Cambiar valores del elemento, esteticamente, no funcinalmente desde CSS
+
+
+a::after{
+    content: "("attr(href)")"
+}
+
+transform
+Propiedades:
+rotate(20deg) -> Rota
+skew -> como un rombo
+skewY(20deg)
+scale -> Se estira en función de Y
+scaleY
+
+Animation:
+Puedo animar sin Javascript
+
+-o-animation: animated_div 5s infinite
+moz-animation: animated_div 5s infinite
+-webkit-animation: animated_div 5s infinite
+
+Solo funciona con un Id el keyframe
+@keyframes animated_div{
+    0%{
+        transform: rotate(0deg);
+        left:0px;
+    }
+}
+    
+)
+
+Centrar elementos: 
+transform: translate(-50%,-50%);
+
+translate como relative
+absoluto de primero (no me importa nada más (también necesito position))
+
+
+Si le paso el mouse por encima -> hover
+transition-property, duration.
+
+CAN I USE
