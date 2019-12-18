@@ -55,12 +55,12 @@ body{
     bottom: 40.5%;
     left: 48.3%;
     transform-origin: bottom;
-    animation: girar 43200 infinite steps(12);
+    animation: girar 43200s infinite steps(12);
     z-index: 3;
 }
 
 @keyframes girar {
     100% {
-      transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
 }
 }
