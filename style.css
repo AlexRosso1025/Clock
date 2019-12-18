@@ -28,10 +28,10 @@ body{
     position: relative;
     width: 0.1%;
     height: 38%;
-    top: 46%;
+    top: 8%;
     left: 49%;
     z-index: 0;
-    transform-origin: 0 0;
+    transform-origin: bottom;
     animation: girar 60s infinite steps(60);
     z-index: 2;
 }
@@ -40,10 +40,10 @@ body{
     background-color: black;
     position: relative;
     width: 1%;
-    height: 36%;
-    top: 7%;
+    height: 34%;
+    bottom: 26%;
     left: 48.5%;
-    transform-origin: 0 0;
+    transform-origin: bottom;
     animation: girar 3600s infinite steps(60);
     z-index: 3;
 }
@@ -53,10 +53,11 @@ body{
     position: relative;
     width: 1.5%;
     height: 15%;
-    bottom: 28%;
+    bottom: 40.5%;
     left: 48.3%;
+    transform-origin: bottom;
     animation: girar 43200 infinite steps(12);
-    z-index: 4;
+    z-index: 67;
 }
 
 @keyframes girar {
